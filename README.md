@@ -1,6 +1,6 @@
 # Graphite with Docker
 
-This image is intended to provide ready to use Graphite stack (Graphite-web + Carbon + Whisper).
+This image is intended to provide a ready to use Graphite stack (Graphite-web + Carbon + Whisper).
 
 ## Start the container
 
