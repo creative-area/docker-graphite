@@ -10,15 +10,15 @@ ENV GRAPHITEWEB_EMAIL root@localhost
 RUN apt-get -qq update && apt-get install -y \
 	python-dev \
 	python-pip \
-  python-cairo \
-  python-tz \
-  python-ldap \
-  python-txamqp \
-  python-pyparsing \
-  python-django \
-  python-django-tagging \
-  python-memcache \
-  python-rrdtool \
+	python-cairo \
+	python-tz \
+	python-ldap \
+	python-txamqp \
+	python-pyparsing \
+	python-django \
+	python-django-tagging \
+	python-memcache \
+	python-rrdtool \
 	expect \
 	git \
 	gunicorn \
@@ -56,4 +56,4 @@ EXPOSE 7002
 VOLUME ["/opt/graphite/conf"]
 VOLUME ["/opt/graphite/storage/whisper"]
 
-CMD	["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord"]
