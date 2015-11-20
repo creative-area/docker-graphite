@@ -56,4 +56,4 @@ EXPOSE 7002
 VOLUME ["/opt/graphite/conf"]
 VOLUME ["/opt/graphite/storage/whisper"]
 
-CMD ["/usr/bin/supervisord"]
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
